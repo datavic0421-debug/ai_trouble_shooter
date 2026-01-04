@@ -8,7 +8,7 @@ def get_api_base_url():
         socket.gethostbyname('api')
         return "http://api:8000"
     except socket.gaierror:
-        # 해석이 안 되면 로컬 환경임
+        # 해석이 안되면 로컬 환경임
         return "http://localhost:8000"
 
 API_BASE_URL = get_api_base_url()
