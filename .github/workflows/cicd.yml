@@ -2,9 +2,9 @@ name: AI Trouble Shooter CI/CD
 
 on:
   push:
-    branches: [ "main" ]
-  pull_request:
     branches: [ "main", "final_test2" ]
+  pull_request:
+    branches: [ "main" ]
 
 jobs:
   test-integration:
